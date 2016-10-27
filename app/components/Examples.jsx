@@ -5,7 +5,6 @@ var Examples = (props) => {
         <div>
             <h3>Examples Component!!</h3>
             <p>Examples Component!!</p>
-
         </div>
 
     );
