@@ -9,9 +9,9 @@ var React = require('react');
 //     }
 // });
 
-var WeatherMessage = ({temp, location}) => {
+var WeatherMessage = ({temp, condition, location}) => {
     return (
-        <h3>It's {temp} in {location}</h3>
+        <h3>It's {condition} and {temp} degrees in {location}</h3>
     );
 }
 

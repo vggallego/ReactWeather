@@ -18,7 +18,7 @@ module.exports = {
         return axios.get(requestUrl).then(function(res) {
             console.log(res);
             if (res.data.query.results) {
-                return res.data.query.results.channel.item.condition.temp;
+                return res.data.query.results.channel.item.condition;
             } else {
                 throw new Error('No results for location ', location);
             }
