@@ -8,6 +8,6 @@ var Examples = (props) => {
         </div>
 
     );
-}
+  };
 
 module.exports = Examples;
