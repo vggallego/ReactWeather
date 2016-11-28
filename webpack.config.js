@@ -32,7 +32,7 @@ module.exports = {
             ErrorModal: 'app/components/ErrorModal.jsx',
             openWeatherMap: 'app/api/openWeatherMap.jsx',
             yahooWeather: 'app/api/yahooWeather.jsx',
-            applicationStyles: 'app/styles/app.css'
+            applicationStyles: 'app/styles/app.scss'
         },
         extensions: ['', '.js', '.jsx']
     },
