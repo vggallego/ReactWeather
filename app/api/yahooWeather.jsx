@@ -17,13 +17,20 @@ module.exports = {
 
         return axios.get(requestUrl).then(function(res) {
             console.log(res);
+            var error = {};
             if (res.data.query.results) {
                 return res.data.query.results.channel.item.condition;
             } else {
-                throw new Error('No results for location ', location);
+                error.msg = 'No results for location: ' + location;
+                error.location = location;
+                error.response = res;
+                throw error;
             }
         }, function(res) {
-            throw new Error('No results for location ', location);
+            error.msg = 'Error retrieving data';
+            error.location = location;
+            error.response = res;
+            throw error;
         });
     }
 }
