@@ -16,7 +16,6 @@ module.exports = {
         requestUrl = `${YQL_BASE_API}${yql_weather_query}${yql_location_query}${yql_format_param}`;
 
         return axios.get(requestUrl).then(function(res) {
-            console.log(res);
             var error = {};
             if (res.data.query.results) {
                 return res.data.query.results.channel.item.condition;
